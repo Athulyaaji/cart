@@ -1,0 +1,15 @@
+<h1 class="text-center">Edit Product</h1>
+<form (ngSubmit)="editProduct()" action="" class="w-50 container text-center">
+    <input [(ngModel)]="eData.productName" type="text" class="form contol mt-2 w-75" id="p2" placeholder="product name"name="pn2">
+    <input [(ngModel)]="eData.categoryID" type="text" class="form contol mt-2 w-75" id="p3" placeholder="categoryID"name="pn3">
+    <input [(ngModel)]="eData.descripition" type="text" class="form contol mt-2 w-75" id="p4" placeholder="descripition"name="pn4">
+    <input [(ngModel)]="eData.price" type="text" class="form contol mt-2 w-75" id="p5" placeholder="price" name="pn5">
+    <input [(ngModel)]="eData.is_avilable" type="text" class="form contol mt-2 w-75" id="p6" placeholder="is_avilable"name="pn6">
+    <input [(ngModel)]="eData.productImg" type="text" class="form contol mt-2 w-75" id="p7" placeholder="productImg"name="pn7">
+    <input [(ngModel)]="eData.rating" type="text" class="form contol mt-2 w-75" id="p8" placeholder="rating" name="pn8">
+    <input [(ngModel)]="eData.review" type="text" class="form contol mt-2 w-75" id="p9" placeholder="review" name="pn9">
+    <input [(ngModel)]="eData.offer" type="text" class="form contol mt-2 w-75" id="p10" placeholder="offer" name="pn10">
+    <input [(ngModel)]="eData.brand" type="text" class="form contol mt-2 w-75" id="p11" placeholder="brand"name="pn11"><br>
+    <button  type="submit" class="btn btn-outline-dark mt-3 mb-4 ">Edit Product</button>
+
+</form>

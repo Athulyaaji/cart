@@ -1,0 +1,65 @@
+<div>    
+    <img src="https://i.postimg.cc/KjnSHbKp/delicate-make-up-youtube-thumbnail-23-2149243182.jpg" class=" w-100 " style="height: 450px;" alt="">
+
+</div>
+<div class="py-5">
+    <div class="row " style="margin-left: 100px; " >
+        <div (click)="categoryProduct('')" class="col-3 ">
+            <a style="text-decoration: none; color: black;" >
+            <img class="il " src="https://i.postimg.cc/3JB582Lt/download-1.png" alt="">
+            <h4 class="text-center mt-4 ">All Product</h4></a>
+        </div>
+        <div (click)="categoryProduct(1)" class="col-3"> 
+            <a style="text-decoration: none; color: black;" >
+            <img class="il" src="https://i.postimg.cc/mDVKSs07/images.jpg" alt="">
+            <h4 class="text-center mt-4 ">Lipstick</h4></a>
+        </div>
+        <div (click)="categoryProduct(7)" class="col-3">
+            <a style="text-decoration: none; color: black;" >
+            <img class="il" src="https://i.postimg.cc/Gpg5BQYj/images.png" alt="">
+            <h4 class="text-center mt-4 ">Eylinder</h4></a>
+        </div>
+        <div (click)="categoryProduct(10)" class="col-3">
+            <a style="text-decoration: none; color: black;" >
+            <img class="il" src="https://i.postimg.cc/CxBBTM7L/images-1.jpg" alt="">
+            <h4 class="text-center ">Facewash</h4></a>
+        </div>
+
+    </div> 
+
+</div>
+
+   
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5" >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of  categoryArray | search:searchString:'productName'" class="col mb-5">
+                <div class="card h-100" >
+                    <!-- Product image-->
+                    <img style="height: 200px;" class="card-img-top" src={{i.productImg}} alt="..." />
+                    
+                    <!-- Product details-->
+                    <div class="card-body p-4" >
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder fs-6">{{i.productName}}</h5>
+                            <!-- rating -->
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>{{i.rating}}
+                            <!-- Product price-->
+                          <h4 style="color: rgb(241, 33, 75);" >Rs{{i.price}}</h4>
+                          <!-- rating -->
+                          <h5 style="color: green;">{{i.rating}}%Off</h5>
+
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn  mt-auto text-white" style="background-color: rgb(242, 127, 101); " href="product/view/{{i.id}}">View Product</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>

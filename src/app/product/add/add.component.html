@@ -1,0 +1,16 @@
+<h1 class="text-center">Add New Product</h1>
+<form [formGroup]="addForm" action="" class="w-50 container text-center">
+    <input formControlName="pid" type="text" class="form contol mt-2 w-75" id="p1" placeholder="product id" name="pn1">
+    <input formControlName="pname" type="text" class="form contol mt-2 w-75" id="p2" placeholder="product name" name="pn2">
+    <input formControlName="catId" type="text" class="form contol mt-2 w-75" id="p3" placeholder="categoryID" name="pn3">
+    <input formControlName="desc" type="text" class="form contol mt-2 w-75" id="p4" placeholder="descripition" name="pn4">
+    <input formControlName="price" type="text" class="form contol mt-2 w-75" id="p5" placeholder="price" name="pn5">
+    <input formControlName="is_avail" type="text" class="form contol mt-2 w-75" id="p6" placeholder="is_avilable" name="pn6">
+    <input formControlName="prodImg" type="text" class="form contol mt-2 w-75" id="p7" placeholder="productImg" name="pn7">
+    <input formControlName="rating" type="text" class="form contol mt-2 w-75" id="p8" placeholder="rating" name="pn8">
+    <input formControlName="review" type="text" class="form contol mt-2 w-75" id="p9" placeholder="review" name="pn9">
+    <input formControlName="offer" type="text" class="form contol mt-2 w-75" id="p10" placeholder="offer" name="pn10">
+    <input formControlName="brand" type="text" class="form contol mt-2 w-75" id="p11" placeholder="brand" name="pn11"><br>
+    <button (click)="add()" type="submit" class="btn btn-outline-dark mt-3 mb-4 ">Add Product</button>
+
+</form>
